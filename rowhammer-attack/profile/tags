@@ -1,0 +1,215 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+%.o	Makefile	/^%.o: %.c %.h$/;"	t
+%.o	Makefile	/^%.o: %.c$/;"	t
+ALLOC_H	alloc.h	/^#define ALLOC_H /;"	d
+ALLOC_HUGE_1GB	alloc.h	/^#define ALLOC_HUGE_1GB	/;"	d
+ALLOC_HUGE_2MB	alloc.h	/^#define ALLOC_HUGE_2MB	/;"	d
+ALLOC_HUGE_SHIFT	alloc.h	/^#define ALLOC_HUGE_SHIFT /;"	d
+ALLOC_NOLOCK	alloc.h	/^#define ALLOC_NOLOCK /;"	d
+ALLOC_THP	alloc.h	/^#define ALLOC_THP /;"	d
+BUFMAP_SETUP_H	bufmap_setup.h	/^#define BUFMAP_SETUP_H /;"	d
+CALIBRATE_H	calibrate.h	/^#define CALIBRATE_H /;"	d
+CALIBRATE_TIME_H	calibrate_time.h	/^#define CALIBRATE_TIME_H /;"	d
+CFLAGS	Makefile	/^CFLAGS := $(DEF_CFLAGS) $(EXTRA_CFLAGS) $(OFLAGS)$/;"	m
+CHECK_PERIOD	pressure_pthread.h	/^static const size_t CHECK_PERIOD = 1 << 24;$/;"	v	typeref:typename:const size_t
+DEFAULT_GRAN	calibrate.c	/^static const unsigned long DEFAULT_GRAN = 0x100000;$/;"	v	typeref:typename:const unsigned long	file:
+DEFAULT_INTERVALS	params.c	/^static const unsigned long DEFAULT_INTERVALS = 3;$/;"	v	typeref:typename:const unsigned long	file:
+DEFAULT_MULT	calibrate.c	/^static const unsigned int DEFAULT_MULT = 3;$/;"	v	typeref:typename:const unsigned int	file:
+DEFAULT_TPAT	params.c	/^static const uint8_t DEFAULT_TPAT[]  = {0x00};$/;"	v	typeref:typename:const uint8_t[]	file:
+DEFAULT_TPATLEN	params.c	/^static const size_t DEFAULT_TPATLEN = sizeof(DEFAULT_TPAT);$/;"	v	typeref:typename:const size_t	file:
+DEFAULT_VPAT	params.c	/^static const uint8_t DEFAULT_VPAT[]  = {0xff};$/;"	v	typeref:typename:const uint8_t[]	file:
+DEFAULT_VPATLEN	params.c	/^static const size_t DEFAULT_VPATLEN = sizeof(DEFAULT_VPAT);$/;"	v	typeref:typename:const size_t	file:
+DEF_CFLAGS	Makefile	/^DEF_CFLAGS := -std=c99 -Wall -I$(RAMSES_PATH)\/include -Wpedantic -pedantic$/;"	m
+DOTOBUILD	Makefile	/^DOTOBUILD = $(CC) $(CFLAGS) -c $<$/;"	m
+DRAM_REFRESH_US	params.c	/^static const unsigned long DRAM_REFRESH_US = 64000;$/;"	v	typeref:typename:const unsigned long	file:
+HAMMER_H	hammer.h	/^#define HAMMER_H /;"	d
+HAMMER_X86	hammer.h	/^#define HAMMER_X86 /;"	d
+HAMQUEUE_H	hamqueue.h	/^#define HAMQUEUE_H /;"	d
+HELP_STR	params.c	/^static const char HELP_STR[] =$/;"	v	typeref:typename:const char[]	file:
+HUGE_SHIFTS	alloc.h	/^static const int HUGE_SHIFTS[] = { 0 };$/;"	v	typeref:typename:const int[]
+HUGE_SHIFTS	alloc.h	/^static const int HUGE_SHIFTS[] = { 0, ALLOC_HUGE_2MB, ALLOC_HUGE_1GB };$/;"	v	typeref:typename:const int[]
+HUGE_SHIFTS_LEN	alloc.h	/^static const size_t HUGE_SHIFTS_LEN = sizeof(HUGE_SHIFTS) \/ sizeof(*HUGE_SHIFTS);$/;"	v	typeref:typename:const size_t
+HamQueue	hamqueue.h	/^struct HamQueue {$/;"	s
+HeurArg	bufmap_setup.h	/^struct HeurArg {$/;"	s
+INTRO_STR	params.c	/^static const char INTRO_STR[] =$/;"	v	typeref:typename:const char[]	file:
+MEM_H	mem.h	/^#define MEM_H /;"	d
+M_DOUBLE	params.h	/^	M_DOUBLE = 1$/;"	e	enum:run_mode
+M_SINGLE	params.h	/^	M_SINGLE = 0,$/;"	e	enum:run_mode
+NOVAL	params.c	/^#define NOVAL /;"	d	file:
+OFLAGS	Makefile	/^OFLAGS := -O2$/;"	m
+OVRSHOOT_DEN	calibrate.c	/^static const int OVRSHOOT_DEN = 32;$/;"	v	typeref:typename:const int	file:
+OVRSHOOT_NUM	calibrate.c	/^static const int OVRSHOOT_NUM = 1;$/;"	v	typeref:typename:const int	file:
+PARAMS_H	params.h	/^#define PARAMS_H /;"	d
+PRESSURE_H	pressure.h	/^#define PRESSURE_H /;"	d
+PRESSURE_PTHREAD_H	pressure_pthread.h	/^#define PRESSURE_PTHREAD_H /;"	d
+PRES_NONE	pressure.h	/^	PRES_NONE = 0,$/;"	e	enum:pressure_fn
+PRES_SEQ_LD	pressure.h	/^	PRES_SEQ_LD, \/* Sequential loads *\/$/;"	e	enum:pressure_fn
+PRES_SEQ_ST	pressure.h	/^	PRES_SEQ_ST \/* Sequential stores *\/$/;"	e	enum:pressure_fn
+PROFILE_H	profile.h	/^#define PROFILE_H /;"	d
+PresArg	pressure.h	/^struct PresArg {$/;"	s
+PressureKernel	pressure.h	/^struct PressureKernel {$/;"	s
+ProfileCtx	profile.h	/^struct ProfileCtx {$/;"	s
+ProfileParams	params.h	/^struct ProfileParams {$/;"	s
+RAMSES_PATH	Makefile	/^RAMSES_PATH := ..\/ramses$/;"	m
+TRANS_HEUR	bufmap_setup.h	/^	TRANS_HEUR,$/;"	e	enum:TransType
+TRANS_NATIVE	bufmap_setup.h	/^	TRANS_NATIVE$/;"	e	enum:TransType
+TransType	bufmap_setup.h	/^enum TransType {$/;"	g
+USAGE_STR	params.c	/^const char USAGE_STR[] =$/;"	v	typeref:typename:const char[]
+VERBOSITY	main.c	/^static int VERBOSITY = V_ERR;$/;"	v	typeref:typename:int	file:
+V_DEBUG	params.h	/^#define V_DEBUG /;"	d
+V_ERR	params.h	/^#define V_ERR /;"	d
+V_INFO	params.h	/^#define V_INFO /;"	d
+_GNU_SOURCE	alloc.c	/^#define _GNU_SOURCE$/;"	d	file:
+_GNU_SOURCE	main.c	/^#define _GNU_SOURCE$/;"	d	file:
+_POSIX_C_SOURCE	alloc.c	/^#define _POSIX_C_SOURCE /;"	d	file:
+_POSIX_C_SOURCE	calibrate_time.h	/^#define _POSIX_C_SOURCE /;"	d
+all	Makefile	/^all: profile$/;"	t
+alloc_al	params.h	/^	size_t alloc_al;$/;"	m	struct:ProfileParams	typeref:typename:size_t
+alloc_flags	params.h	/^	int alloc_flags;$/;"	m	struct:ProfileParams	typeref:typename:int
+alloc_hammerbuf	alloc.c	/^void *alloc_hammerbuf(size_t sz, size_t align, int flags)$/;"	f	typeref:typename:void *
+alloc_sz	params.h	/^	size_t alloc_sz;$/;"	m	struct:ProfileParams	typeref:typename:size_t
+arg	pressure.h	/^	struct PresArg arg;$/;"	m	struct:PressureKernel	typeref:struct:PresArg
+atk_check	main.c	/^static int atk_check(struct AddrEntry a, struct AddrEntry b, void *arg)$/;"	f	typeref:typename:int	file:
+atk_end	main.c	/^static void atk_end(void *arg)$/;"	f	typeref:typename:void	file:
+attack_check_fn	profile.h	/^	attack_check_fn_t attack_check_fn; \/* Attack check callback *\/$/;"	m	struct:ProfileCtx	typeref:typename:attack_check_fn_t
+attack_check_fn_arg	profile.h	/^	void *attack_check_fn_arg;$/;"	m	struct:ProfileCtx	typeref:typename:void *
+attack_check_fn_t	profile.h	/^typedef int (*attack_check_fn_t)(struct AddrEntry, struct AddrEntry, void *);$/;"	t	typeref:typename:int (*)(struct AddrEntry,struct AddrEntry,void *)
+attack_end_fn	profile.h	/^	attack_end_fn_t attack_end_fn; \/* Attack end callback *\/$/;"	m	struct:ProfileCtx	typeref:typename:attack_end_fn_t
+attack_end_fn_arg	profile.h	/^	void *attack_end_fn_arg;$/;"	m	struct:ProfileCtx	typeref:typename:void *
+attack_end_fn_t	profile.h	/^typedef void (*attack_end_fn_t)(void *);$/;"	t	typeref:typename:void (*)(void *)
+base	bufmap_setup.h	/^	physaddr_t base;$/;"	m	struct:HeurArg	typeref:typename:physaddr_t
+bitflip_rep	main.c	/^static void bitflip_rep(struct AddrEntry a, size_t off, uint8_t exp,$/;"	f	typeref:typename:void	file:
+bitflip_report_fn	profile.h	/^	bitflip_report_fn_t bitflip_report_fn; \/* Bitflip callback *\/$/;"	m	struct:ProfileCtx	typeref:typename:bitflip_report_fn_t
+bitflip_report_fn_arg	profile.h	/^	void *bitflip_report_fn_arg;$/;"	m	struct:ProfileCtx	typeref:typename:void *
+bitflip_report_fn_t	profile.h	/^typedef void (*bitflip_report_fn_t)(struct AddrEntry, size_t, uint8_t, uint8_t, void *);$/;"	t	typeref:typename:void (*)(struct AddrEntry,size_t,uint8_t,uint8_t,void *)
+bits	bufmap_setup.h	/^	int bits;$/;"	m	struct:HeurArg	typeref:typename:int
+bm	profile.h	/^	struct BufferMap *bm; \/* Main hammer buffer *\/$/;"	m	struct:ProfileCtx	typeref:struct:BufferMap *
+buf	pressure.h	/^	void *buf;$/;"	m	struct:PresArg	typeref:typename:void *
+buffer_to_unmap	main.c	/^char* buffer_to_unmap;$/;"	v	typeref:typename:char *
+buffer_to_unmap_size	main.c	/^int buffer_to_unmap_size = 1000 * 4096;$/;"	v	typeref:typename:int
+buflen	pressure.h	/^	size_t buflen;$/;"	m	struct:PresArg	typeref:typename:size_t
+c	profile.h	/^	struct ProfileCtx* c;$/;"	m	struct:hammeringDataStruct	typeref:struct:ProfileCtx *
+cal	params.h	/^	long cal;$/;"	m	struct:ProfileParams	typeref:typename:long
+cal	profile.h	/^	unsigned long cal; \/* Hammer iterations per refresh interval *\/$/;"	m	struct:ProfileCtx	typeref:typename:unsigned long
+cal_mult	profile.h	/^	unsigned int cal_mult; \/* Refresh intervals to hammer for *\/$/;"	m	struct:ProfileCtx	typeref:typename:unsigned int
+calibrate	main.c	/^static unsigned long calibrate(hammerfunc_t hamfunc, long hamopt,$/;"	f	typeref:typename:unsigned long	file:
+calibrate.o	Makefile	/^calibrate.o: calibrate.c calibrate.h calibrate_time.h hammer.h$/;"	t
+calibrate_hammer	calibrate.c	/^unsigned long calibrate_hammer(hammerfunc_t hammer_func, long hammer_opt,$/;"	f	typeref:typename:unsigned long
+calibrate_hammer_advanced	calibrate.c	/^unsigned long calibrate_hammer_advanced(hammerfunc_t hammer_func, long hammer_opt,$/;"	f	typeref:typename:unsigned long
+cap	Makefile	/^cap: profile$/;"	t
+check_row	profile.c	/^static void check_row(struct ProfileCtx *c, struct HamQueue *q, hamqueue_off_t qi,$/;"	f	typeref:typename:void	file:
+check_rows	profile.c	/^static inline void check_rows(struct ProfileCtx *p, struct HamQueue *q,$/;"	f	typeref:typename:void	file:
+clean	Makefile	/^clean:$/;"	t
+cleanup_pressure	main.c	/^static int cleanup_pressure(struct PressureKernel *pks)$/;"	f	typeref:typename:int	file:
+config_pressure	main.c	/^static int config_pressure(struct BufferMap *bm, char *opt,$/;"	f	typeref:typename:int	file:
+convert_arg	params.c	/^static int convert_arg(char *opt, char *name, long *val)$/;"	f	typeref:typename:int	file:
+convert_arg_delim	params.c	/^static int convert_arg_delim(char *opt, char *name, long *val, char delim)$/;"	f	typeref:typename:int	file:
+convert_sufx	params.c	/^static int convert_sufx(char *opt, char *name, size_t *val)$/;"	f	typeref:typename:int	file:
+count	hamqueue.h	/^	hamqueue_off_t count;$/;"	m	struct:HamQueue	typeref:typename:hamqueue_off_t
+data_for_hammering	profile.c	/^struct hammeringDataStruct data_for_hammering;$/;"	v	typeref:struct:hammeringDataStruct
+dist	params.h	/^	long dist;$/;"	m	struct:ProfileParams	typeref:typename:long
+dist	profile.h	/^	unsigned int dist; \/* No. of rows between aggressors (double-sided only) *\/$/;"	m	struct:ProfileCtx	typeref:typename:unsigned int
+dry_run	params.h	/^	int dry_run;$/;"	m	struct:ProfileParams	typeref:typename:int
+extra	profile.h	/^	void *extra; \/* Extra argument, used by some profiling loops *\/$/;"	m	struct:ProfileCtx	typeref:typename:void *
+fill_queue	hamqueue.c	/^static bool fill_queue(struct HamQueue *q, struct BufferMap *bm, int s)$/;"	f	typeref:typename:bool	file:
+fill_row	profile.c	/^static void fill_row(struct BufferMap *bm, struct HamQueue *q, hamqueue_off_t qi,$/;"	f	typeref:typename:void	file:
+fill_rows	profile.c	/^static inline void fill_rows(struct BufferMap *bm, struct HamQueue *q,$/;"	f	typeref:typename:void	file:
+free_hammerbuf	alloc.c	/^int free_hammerbuf(void *buf, size_t sz)$/;"	f	typeref:typename:int
+func	pressure.h	/^	enum pressure_fn func;$/;"	m	struct:PressureKernel	typeref:enum:pressure_fn
+get_hamfunc	params.c	/^static int get_hamfunc(char *opt, hammerfunc_t *func, long *hopt)$/;"	f	typeref:typename:int	file:
+get_physical_pfn	main.c	/^long long get_physical_pfn(uintptr_t v) {$/;"	f	typeref:typename:long long
+get_row_entries	profile.c	/^static inline size_t get_row_entries(struct BufferMap *bm, struct BMPos p,$/;"	f	typeref:typename:size_t	file:
+get_time	calibrate_time.h	/^static inline int get_time(timeval_t *t)$/;"	f	typeref:typename:int
+get_xbm	main.c	/^static int get_xbm(struct BufferMap *bm, int aflags, struct BufferMap *xbm,$/;"	f	typeref:typename:int	file:
+get_xbuf	main.c	/^static int get_xbuf(struct BufferMap *bm, int aflags, void **xbuf, size_t *xlen)$/;"	f	typeref:typename:int	file:
+hamfunc	params.h	/^	hammerfunc_t hamfunc;$/;"	m	struct:ProfileParams	typeref:typename:hammerfunc_t
+hamfunc	profile.h	/^	hammerfunc_t hamfunc; \/* Hammer function used to trigger rowhammer *\/$/;"	m	struct:ProfileCtx	typeref:typename:hammerfunc_t
+hammer_ld	hammer.c	/^void hammer_ld(uintptr_t a, uintptr_t b, unsigned long iters, long opt)$/;"	f	typeref:typename:void
+hammer_ld_flush	hammer.c	/^void hammer_ld_flush(uintptr_t a, uintptr_t b, unsigned long iters, long opt)$/;"	f	typeref:typename:void
+hammer_ld_flush_mfence	hammer.c	/^void hammer_ld_flush_mfence(uintptr_t a, uintptr_t b,$/;"	f	typeref:typename:void
+hammerfunc_t	hammer.h	/^typedef void (*hammerfunc_t)(uintptr_t, uintptr_t, unsigned long, long);$/;"	t	typeref:typename:void (*)(uintptr_t,uintptr_t,unsigned long,long)
+hammeringDataStruct	profile.h	/^struct hammeringDataStruct{$/;"	s
+hamopt	params.h	/^	long hamopt;$/;"	m	struct:ProfileParams	typeref:typename:long
+hamopt	profile.h	/^	long hamopt; \/* Hammer function option argument *\/$/;"	m	struct:ProfileCtx	typeref:typename:long
+hamqueue_clear	hamqueue.h	/^static inline void hamqueue_clear(struct HamQueue *q)$/;"	f	typeref:typename:void
+hamqueue_idx	hamqueue.h	/^static inline hamqueue_off_t hamqueue_idx(struct HamQueue *q, hamqueue_off_t i)$/;"	f	typeref:typename:hamqueue_off_t
+hamqueue_off_t	hamqueue.h	/^typedef uint16_t hamqueue_off_t;$/;"	t	typeref:typename:uint16_t
+hamqueue_push	hamqueue.c	/^static void hamqueue_push(struct HamQueue *q, struct BMPos v)$/;"	f	typeref:typename:void	file:
+hamqueue_ready	hamqueue.c	/^bool hamqueue_ready(struct HamQueue *q, struct BufferMap *bm, int s)$/;"	f	typeref:typename:bool
+hamqueue_size	hamqueue.h	/^static inline size_t hamqueue_size(int len)$/;"	f	typeref:typename:size_t
+head	hamqueue.h	/^	hamqueue_off_t head;$/;"	m	struct:HamQueue	typeref:typename:hamqueue_off_t
+heur_base	params.h	/^	physaddr_t heur_base;$/;"	m	struct:ProfileParams	typeref:typename:physaddr_t
+heur_bits	params.h	/^	int heur_bits;$/;"	m	struct:ProfileParams	typeref:typename:int
+incomplete	params.h	/^	int incomplete;$/;"	m	struct:ProfileParams	typeref:typename:int
+incomplete	profile.h	/^	int incomplete; \/* If non-zero, enables hammering on rows not fully mapped *\/$/;"	m	struct:ProfileCtx	typeref:typename:int
+ints	params.h	/^	long ints;$/;"	m	struct:ProfileParams	typeref:typename:long
+invert_pat	params.h	/^	int invert_pat;$/;"	m	struct:ProfileParams	typeref:typename:int
+invert_pat	profile.h	/^	int invert_pat; \/* If non-zero, run with bit-inverted patterns as well *\/$/;"	m	struct:ProfileCtx	typeref:typename:int
+last_q	hamqueue.c	/^static inline struct BMPos last_q(struct HamQueue *q)$/;"	f	typeref:struct:BMPos	file:
+len	hamqueue.h	/^	hamqueue_off_t len;$/;"	m	struct:HamQueue	typeref:typename:hamqueue_off_t
+main	main.c	/^int main(int argc, char *argv[])$/;"	f	typeref:typename:int
+main.o	Makefile	/^main.o: main.c alloc.h bufmap_setup.h calibrate.h hammer.h profile.h pressure.h params.h$/;"	t
+mem_check	mem.c	/^size_t mem_check(void *buffer, size_t buflen,$/;"	f	typeref:typename:size_t
+mem_fill	mem.c	/^void mem_fill(void *buffer, size_t buflen,$/;"	f	typeref:typename:void
+mem_flush	mem.c	/^void mem_flush(void *buffer, size_t buflen)$/;"	f	typeref:typename:void
+mode	params.h	/^	enum run_mode mode;$/;"	m	struct:ProfileParams	typeref:enum:run_mode
+msys_arg	params.h	/^	char *msys_arg;$/;"	m	struct:ProfileParams	typeref:typename:char *
+msys_str	params.h	/^	char *msys_str;$/;"	m	struct:ProfileParams	typeref:typename:char *
+num_exploit_tries	main.c	/^int num_exploit_tries = 0;$/;"	v	typeref:typename:int
+objs	Makefile	/^objs := main.o alloc.o hamqueue.o mem.o calibrate.o profile.o hammer.o pressure.o bufmap_setup.o/;"	m
+outfile	params.h	/^	char *outfile;$/;"	m	struct:ProfileParams	typeref:typename:char *
+params.o	Makefile	/^params.o: params.c params.h alloc.h hammer.h$/;"	t
+pfuncs	pressure_pthread.h	/^static pressure_fn_t pfuncs[] = {$/;"	v	typeref:typename:pressure_fn_t[]
+pres_opt	params.h	/^	char *pres_opt;$/;"	m	struct:ProfileParams	typeref:typename:char *
+pres_seq_ld	pressure_pthread.h	/^static void *pres_seq_ld(void *arg)$/;"	f	typeref:typename:void *
+pres_seq_st	pressure_pthread.h	/^static void *pres_seq_st(void *arg)$/;"	f	typeref:typename:void *
+pres_start	pressure_pthread.h	/^int pres_start(struct PressureKernel *pks, void *tids)$/;"	f	typeref:typename:int
+pres_stop	pressure_pthread.h	/^int pres_stop(struct PressureKernel *pks, void *tids)$/;"	f	typeref:typename:int
+pres_tids_size	pressure_pthread.h	/^size_t pres_tids_size(size_t nthreads)$/;"	f	typeref:typename:size_t
+pressure.o	Makefile	/^pressure.o: pressure.c pressure_pthread.h$/;"	t
+pressure_fn	pressure.h	/^enum pressure_fn {$/;"	g
+pressure_fn_t	pressure_pthread.h	/^typedef void *(*pressure_fn_t)(void *arg);$/;"	t	typeref:typename:void * (*)(void * arg)
+print_entry	main.c	/^static void print_entry(struct AddrEntry e, FILE *f, const char *trail)$/;"	f	typeref:typename:void	file:
+process_argv	params.c	/^int process_argv(int argc, char *argv[], struct ProfileParams *p)$/;"	f	typeref:typename:int
+profile	Makefile	/^profile: $(objs)$/;"	t
+profile.o	Makefile	/^profile.o: profile.c profile.h hamqueue.h mem.h hammer.h$/;"	t
+profile_doublesided	profile.c	/^void profile_doublesided(struct ProfileCtx *c)$/;"	f	typeref:typename:void
+profile_singlesided	profile.c	/^void profile_singlesided(struct ProfileCtx *c)$/;"	f	typeref:typename:void
+q	hamqueue.h	/^	struct BMPos q[];$/;"	m	struct:HamQueue	typeref:struct:BMPos[]
+read_file	main.c	/^static char *read_file(FILE *f)$/;"	f	typeref:typename:char *	file:
+read_stream	main.c	/^static char *read_stream(FILE *f)$/;"	f	typeref:typename:char *	file:
+refresh	params.h	/^	long refresh;$/;"	m	struct:ProfileParams	typeref:typename:long
+row_fully_mapped	hamqueue.c	/^bool row_fully_mapped(struct BufferMap *bm, struct BMPos p)$/;"	f	typeref:typename:bool
+run_mode	params.h	/^enum run_mode {$/;"	g
+sanity_q	hamqueue.c	/^static inline void sanity_q(struct HamQueue *q, struct BufferMap *bm, int s)$/;"	f	typeref:typename:void	file:
+set_affinity	main.c	/^void set_affinity(int cpu) {$/;"	f	typeref:typename:void
+setup_bufmap	bufmap_setup.c	/^int setup_bufmap(struct BufferMap *bm, void *buf, size_t len,$/;"	f	typeref:typename:int
+setup_bufmap_heur	bufmap_setup.c	/^static int setup_bufmap_heur(struct BufferMap *bm, void *buf, size_t len,$/;"	f	typeref:typename:int	file:
+setup_bufmap_pagemap	bufmap_setup.c	/^static int setup_bufmap_pagemap(struct BufferMap *bm, void *buf, size_t len,$/;"	f	typeref:typename:int	file:
+step	pressure.h	/^	size_t step;$/;"	m	struct:PresArg	typeref:typename:size_t
+step_queue	hamqueue.c	/^static bool step_queue(struct HamQueue *q, struct BufferMap *bm, int s)$/;"	f	typeref:typename:bool	file:
+str2pat	params.c	/^static int str2pat(const char *str, const void **pat, size_t *patlen)$/;"	f	typeref:typename:int	file:
+succ_rows	hamqueue.c	/^static inline bool succ_rows(struct DRAMAddr a, struct DRAMAddr b)$/;"	f	typeref:typename:bool	file:
+suffix2shift	params.c	/^static int suffix2shift(char suffix)$/;"	f	typeref:typename:int	file:
+tdiff_us	calibrate_time.h	/^static inline long long tdiff_us(timeval_t a, timeval_t b)$/;"	f	typeref:typename:long long
+timeval_t	calibrate_time.h	/^typedef struct timespec timeval_t;$/;"	t	typeref:struct:timespec
+tpat	params.h	/^	const void *tpat;$/;"	m	struct:ProfileParams	typeref:typename:const void *
+tpat	profile.h	/^	const void *tpat; \/* Pattern to fill target (aggressor) rows with *\/$/;"	m	struct:ProfileCtx	typeref:typename:const void *
+tpatlen	params.h	/^	size_t tpatlen;$/;"	m	struct:ProfileParams	typeref:typename:size_t
+tpatlen	profile.h	/^	size_t tpatlen;$/;"	m	struct:ProfileCtx	typeref:typename:size_t
+try_to_exploit	main.c	/^void try_to_exploit(struct AddrEntry a, size_t off, uint8_t exp, uint8_t got, void* arg)$/;"	f	typeref:typename:void
+va1	profile.h	/^	uintptr_t va1, va2;$/;"	m	struct:hammeringDataStruct	typeref:typename:uintptr_t
+va2	profile.h	/^	uintptr_t va1, va2;$/;"	m	struct:hammeringDataStruct	typeref:typename:uintptr_t
+verbosity	params.h	/^	int verbosity;$/;"	m	struct:ProfileParams	typeref:typename:int
+vpat	params.h	/^	const void *vpat;$/;"	m	struct:ProfileParams	typeref:typename:const void *
+vpat	profile.h	/^	const void *vpat; \/* Pattern to fill victim rows with *\/$/;"	m	struct:ProfileCtx	typeref:typename:const void *
+vpatlen	params.h	/^	size_t vpatlen;$/;"	m	struct:ProfileParams	typeref:typename:size_t
+vpatlen	profile.h	/^	size_t vpatlen;$/;"	m	struct:ProfileCtx	typeref:typename:size_t
+width	params.h	/^	long width;$/;"	m	struct:ProfileParams	typeref:typename:long
+width	profile.h	/^	unsigned int width; \/* No. of rows checked on each side of aggressor row(s) *\/$/;"	m	struct:ProfileCtx	typeref:typename:unsigned int
