@@ -10,3 +10,4 @@ This repository contains the code and other resources used in the workshop.
 - `rowhammer-attack`: Contains code related to the Rowhammer attack.
 - `spectre`: Contains code related to the Spectre attack.
 - `slides`: Contains the slides used in the workshop.
+- `demo`: Contains the demo videos
